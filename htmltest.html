@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--türkçe karakter yazmak için charset kullanılıyor-->
+        <title>ilk sayfam </title>
+    </head>
+    <body>
+        merhaba türkiye
+        <div></div> <!--buraya yazılanlar tüm satırı kaplıyor yani katagorize ediyor-->
+        <span> </span> <!--buraya yazılanlar sadece bir satırı kapsıyor.satır içi öğelerde kullanılır.-->
+        <p>paragrafim</p> <!--paragraf etiketi : p-->
+        <p>2.paragrafim</p>
+
+        <h1> Başlık</h1> <!--başlık serisi 6 ya kadar punto büyüklüğünde büyükten küçüğe doğru-->
+        <h2> Başlık</h2>
+        <h3> Başlık</h3>
+        <h4> Başlık</h4>
+        <h5> Başlık</h5>
+        <h6> Başlık</h6>
+       
+        <b> kastamonu </b> <!--yazıyı kalın yapmak için kullanılır bu etiket-->
+        <p>
+            <strong>kastamonu karadeniz</strong> <!--b ile aynı ama bu vurguda yapıyor.-->
+            <i>azdavay</i> <!--yazıyı italik yapmak için kullanılır bu etiket-->
+            <em>azdavay</em> <!--yazıyı italik yapmak ve vurgulamak için kullanılır bu etiket-->
+            <mark>azdavay</mark> <!--yazıya vurgu yapmak için kullanılır bu etiket-->
+        </p>
+        <p>
+            yazıyı <small>küçük</small>  yapar
+        </p>
+        <p>
+            <s>ben istanbulluyum</s> <!--üstünü çizer-->
+            ben kastamonuluyum
+        </p>
+        <p>
+            bugün hava <del>yağmurlu</del> değil <ins>güneşli</ins>
+        </p>
+        <p>
+            merhaba ben <u>yücel</u><!--altını çizer-->
+        </p>
+        <p>
+            H<sub>2</sub>O <!--yanındakini altına alır-->
+            10<sup>2</sup> <br> <!--br etiketi alt satıra geçirir-->
+            merhaba
+        </p>
+
+        <p>
+            türkçe yazım kurallarını <abbr title="türk dil kurumu">TDK</abbr> belirler.<br>
+            Yunusun dediği gibi;<q>mal yalan mülk yalan var birazda sen oyalan</q>
+    
+        </p>
+        <p>
+            Kastamonu hakkında Wikipedia;
+            <blockquote cite="https://tr.wikipedia.org/wiki/Kastamonu">Kastamonu, Türkiye Cumhuriyeti'nin Karadeniz Bölgesi'nde yer alan Kastamonu ilinin merkez şehridir. Gökırmak'ın bir kolu olan Karaçomak Deresi vadisinde kurulu bulunan şehrin denizden yüksekliği 774 metredir.</blockquote>
+            <!--girinti yani boşluk oluşturur.-->
+        </p>
+
+        <p>
+            <a href="https://www.google.com.tr/?hl=tr" title="google" target="_self"><b>Buraya</b><a> tıkladığında googleye gider.</a><br><!--aynı sayfada açıyor self yapmasakta aynı sayfada açar.-->
+            <a href="https://www.google.com.tr/?hl=tr" target="_blank"><b>Buraya</b><a> tıkladığında googleye gider.</a><!--farklı sayfada açıyor blank-->
+        </p>
+
+        <p>
+            <a href="ismiserif.jpeg" download>Resmi indirmek için </a>
+        </p>
+
+        <p>
+            <a href="#ders1">HTML dersi 1</a>
+            <a href="#ders2">HTML dersi 2</a>
+           
+        </p>
+
+        <div id="ders1">
+            merhaba<br>
+            merhaba<br>
+            merhaba<br>
+            merhaba<br>
+        </div>
+ 
+        <div id="ders2">
+            türkiye<br>
+            türkiye<br>
+           türkiye<br>
+            türkiye<br>
+        </div>
+
+
+        <table border="1">
+            <caption>Tüm il ve ilçeler</caption><!--Tablo başlığı-->
+           <thead>
+            <tr>
+                <th>İller</th>
+                <th>İlçeler</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>Kastamonu</td>
+                <td>Azdavay</td>
+                <td rowspan="3">merhaba</td><!--satır birleştirir-->
+            </tr>
+            <tr>
+                <td>İstanbul</td>
+                <td>Bebek</td>
+            </tr>
+            <tr>
+                <td>Sakarya</td>
+                <td>Karasu</td>
+            </tr>
+           </tbody>
+           <tfoot>
+            <tr>
+                <td colspan="2"><!--coldspan iki sütunu birleştirir.-->
+                    Toplam il sayısı 3
+                </td>
+            </tr>
+           </tfoot>
+        </table>
+
+        <ul> <!--liste oluşturur.-->
+            <li>Yücel</li>
+            <li>teke</li>
+            <li>merhaba</li>
+        </ul>
+        <ol start="2"><!--sayı ile sıralı liste yapar-->
+            <li>hücre</li>
+            <li>doku</li>
+            <li>organ</li>
+        </ol>
+        <audio controls>
+            <source src="">
+        </audio>
+        <video controls>
+            <source src="">
+            <track src=""><!--altayzı ekleme-->
+        </video>
+        <iframe src="https://www.takvim.com.tr/" width="500" height="500">
+
+        </iframe>
+    </body>
+</html>
